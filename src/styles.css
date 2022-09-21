@@ -1,0 +1,76 @@
+h6 {
+    font-style: italic;
+    text-align: left;
+}
+
+.enter-city {
+    margin: 0 auto;
+}
+
+.sunny {
+    font-size: 100px;
+}
+
+.current-city {
+    text-align: center;
+
+    width: 55%;
+    padding: 7px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    margin-left: 115px;
+}
+
+.current-degree, .current-parameter {
+    text-align: center;
+    margin: 13px auto;
+    width: 130px;
+    padding: 3px;
+    border: 2px solid grey;
+    border-radius: 80px;
+}
+.current-degree{
+    width: 85px;
+
+}
+
+
+.card-text {
+    font-size: 12px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body-two {
+    max-width: 50%;
+    margin: 30px 65px;
+}
+
+.list-group-flush {
+    padding: 1px;
+    margin: 25px;
+
+    font-size: 20px;
+}
+
+.container {
+    max-width: 950px;
+    margin-top: 50px;
+}
+
+.correct {
+    font-weight: 300;
+    color: dimgrey;
+}
+
+.emojis {
+    font-size: 28px;
+    color: dimgrey;
+}
+
+.celsius, .fahrenheit, #search-btn{
+    cursor: pointer;
+
+}
