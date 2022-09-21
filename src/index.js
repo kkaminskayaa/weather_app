@@ -75,8 +75,8 @@ function search(event){
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}&&units=metric`;
     axios.get(apiUrl).then(showTemperature);
 }
-let searchButton = document.querySelector("#search-btn")
-searchButton.addEventListener("click", search);
+let formElement = document.querySelector("#search-form")
+formElement.addEventListener("submit", search);
 
 function showTemperature(response){
     console.log(response.data);

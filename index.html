@@ -31,20 +31,21 @@
             <div class="row">
                 <div class="col-6 enter-city">
                     <div class="input-group flex-nowrap">
-                        <input
-                                type="text"
-                                class="form-control"
-                                placeholder="Enter a city"
-                                aria-label="City"
-                                aria-describedby="addon-wrapping"
-                                id = "search-text-input"
-                        />
-                        <span class="input-group-text" id="search-btn"><i class="bi bi-search"></i></span>
-                        <button class = "btn btn-primary" id="current-btn">
-                            Current
-                        </button>
+                        <form id="search-form">
+                            <div class="input-group">
+                                <input
+                                        id="search-text-input"
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Enter city"
+                                />
+                                <button type="submit" class="input-group-text" >
+                                    🔍
+                                </button>
+                                <button class="btn btn-primary" id="current-btn">Current</button>
+                            </div>
+                        </form>
                     </div>
-
                 </div>
             </div>
 
@@ -73,6 +74,7 @@
                             <span class = "wind-speed">
                                 Wind: 3km/h
                             </span>
+
                         </h6>
                     </div>
                     <div class="col-2 correct">
