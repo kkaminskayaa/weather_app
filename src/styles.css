@@ -1,3 +1,11 @@
+body{
+    background-color: rgba(157, 181, 198, 0.25);
+}
+
+.mb-3{
+    border-radius: 33px;
+}
+
 h6 {
     font-style: italic;
     text-align: left;
@@ -34,13 +42,13 @@ h6 {
 
 }
 
-
 .card-text {
     font-size: 12px;
 }
 
 .card-body {
     text-align: center;
+
 }
 
 .card-body-two {
@@ -56,12 +64,18 @@ h6 {
 }
 
 .container {
-    max-width: 950px;
+    max-width:  900px;
     margin-top: 50px;
 }
 
 .correct {
     font-weight: 300;
+    color: dimgrey;
+    margin: 70px 0px;
+    padding-left: 0px;
+}
+
+.current-emoji, .current-parameter, .current-degree, .current-day, .current-time, .humidity-percent, .wind-speed, .current-city{
     color: dimgrey;
 }
 
@@ -72,10 +86,53 @@ h6 {
 
 .celsius, .fahrenheit, #search-btn{
     cursor: pointer;
-
 }
 
 footer{
     text-align: center;
     font-size: smaller;
 }
+.numeric {
+    color: rgb(232, 141, 167);
+}
+
+footer a   {
+    color: dimgrey;
+    font-style: italic;
+}
+
+/*.btn-primary {*/
+/*    background-color: rgba(232, 141, 167, 0.2);*/
+/*    color: dimgrey;*/
+/*    border: 1px solid;*/
+/*    border-color: rgb(232, 141, 167);*/
+/*    font-weight: bold;*/
+/*}*/
+
+.btn-primary {
+    background-color: rgb(157, 181, 198);
+    color: white;
+    border: 1px solid;
+    border-color: dimgrey;
+    font-weight: bold;
+}
+
+
+.btn-primary:hover {
+    font-weight: bold;
+    background-color: dimgrey;
+    color: white;
+    border-color: dimgrey;
+}
+
+.future-emojis{
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.current-emoji{
+    font-size: 140px;
+    padding: 5px;
+}
+
