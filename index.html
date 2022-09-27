@@ -38,6 +38,7 @@
                                         type="text"
                                         class="form-control"
                                         placeholder="Enter city"
+                                        autocomplete="off"
                                 />
                                 <button type="submit" class="input-group-text" >
                                     🔍
@@ -62,17 +63,17 @@
                         <h2 class=" current-emoji">
                         🌦
                         </h2>
-                        <h3 class="current-degree"> <span class = "current-temperature"> 25 °C</span> </h3>
+                        <h3 class="current-degree"> <span class = "current-temperature"> </span> </h3>
                         <h3 class ="current-parameter">
-                            <span class = "celsius">  °C </span> | <span class = "fahrenheit">  °F </span>
+                            <span id="celsiusLink" class = "celsius active">  °C </span> | <span id="fahrenheitLink" class = "fahrenheit">  °F </span>
                         </h3>
                         <h6> <span class = "humidity-percent">
-                             Humidity: <span class = "numeric">  20% </span>
+                             Humidity: <span class = "numeric"> </span>
                         </span>
                             <br />
 
                             <span class = "wind-speed">
-                                Wind: <span class = "numeric" >  3km/h </span>
+                                Wind: <span class = "numeric" > </span>
                             </span>
 
                         </h6>
@@ -108,7 +109,7 @@
                             </li>
 
                             <li class="list-group-item future-emojis">
-                              🌦
+                                🌧
                             </li>
 
                             <li class="list-group-item future-emojis">

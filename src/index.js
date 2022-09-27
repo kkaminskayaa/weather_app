@@ -41,6 +41,8 @@ function convertFahrenheit(event){
 
     let temperature = document.querySelector(".current-temperature");
     if(temperature.innerHTML.slice(-1) === "C"){
+        celsius.classList.remove("active");
+        fahrenheit.classList.add("active");
         let temp = temperature.innerHTML.slice(0, -3);
         temperature.innerHTML = `${Math.round(temp * 1.8 + 32)} °F`;
     }
@@ -53,7 +55,8 @@ fahrenheit.addEventListener("click", convertFahrenheit);
 
 function convertCelsius(event){
     event.preventDefault();
-
+    celsius.classList.add("active");
+    fahrenheit.classList.remove("active");
     let temperature = document.querySelector(".current-temperature");
     if(temperature.innerHTML.slice(-1) === "F"){
         let temp = temperature.innerHTML.slice(0, -3);
