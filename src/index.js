@@ -88,23 +88,29 @@ function showTemperature(response){
     let wind = Math.round(response.data.wind.speed);
     let description = response.data.weather[0].description;
 
+
     let temperatureElement = document.querySelector(".current-temperature");
     let humidityElement = document.querySelector(".humidity-percent");
     let windElement = document.querySelector(".wind-speed");
     let descriptionElement = document.querySelector(".description-element");
     let city = document.querySelector("h3");
+    let iconElement = document.querySelector("#icon");
 
     city.innerHTML = response.data.name;
     temperatureElement.innerHTML = `${temperature} °C`;
     humidityElement.innerHTML = `Humidity: ${humidity}%`;
     windElement.innerHTML = `Wind: ${wind} km/h;`;
     descriptionElement.innerHTML= description;
+    iconElement.setAttribute(
+        "src",
+        `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
+    iconElement.setAttribute("alt", response.data.weather[0].description);
 
 }
 
 function searchCurrent(event){
     event.preventDefault();
-
     navigator.geolocation.getCurrentPosition(function (position) {
             let lon = position.coords.longitude;
             let lat = position.coords.latitude;
@@ -119,4 +125,7 @@ function searchCurrent(event){
 
 let currentButton = document.querySelector("#current-btn")
 currentButton.addEventListener("click", searchCurrent);
+
+window.addEventListener("load", searchCurrent);
+
 
