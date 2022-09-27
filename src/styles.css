@@ -75,8 +75,11 @@ h6 {
     padding-left: 0px;
 }
 
-.current-emoji, .current-parameter, .current-degree, .current-day, .current-time, .humidity-percent, .wind-speed, .current-city{
+.current-emoji, .current-parameter, .current-degree, .current-day, .current-time, .humidity-percent, .wind-speed, .description-element, .current-city{
     color: dimgrey;
+}
+.description-element {
+    text-transform: capitalize;
 }
 
 .emojis {
