@@ -27,7 +27,6 @@ let h6 = document.querySelector("h6");
 h6.innerHTML = `${month} ${date}, ${year}`;
 
 
-
 let hour = addZero(now.getHours());
 let minute = addZero(now.getMinutes());
 
@@ -66,9 +65,7 @@ function convertCelsius(event){
 
 celsius.addEventListener("click", convertCelsius);
 
-
 let apiKey = "6bfa54f242cbb59343d4e58db578dc61";
-
 
 function search(event){
     event.preventDefault();
@@ -89,7 +86,6 @@ function showTemperature(response){
     let temperatureElement = document.querySelector(".current-temperature");
     let humidityElement = document.querySelector(".humidity-percent");
     let windElement = document.querySelector(".wind-speed");
-
 
     let city = document.querySelector("h3");
 
@@ -112,9 +108,8 @@ function searchCurrent(event){
             axios.get(`${apiUrl}`).then(showTemperature);
         }
     )
-
 }
-
 let currentButton = document.querySelector("#current-btn")
 currentButton.addEventListener("click", searchCurrent);
 
+window.addEventListener("load", searchCurrent);
